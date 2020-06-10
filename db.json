@@ -1,0 +1,52 @@
+{
+  "clients": [
+    {
+      "name": "Generali",
+      "city": "Trieste, Italy",
+      "membership": "Platinum",
+      "id": "1"
+    },
+    {
+      "name": "Allianz",
+      "city": "Munich, Germany",
+      "membership": "Platinum",
+      "id": "2"
+    },
+    {
+      "name": "Liberty Mutual",
+      "city": "Boston, Massachusetts",
+      "membership": "Pro",
+      "id": "3"
+    },
+    {
+      "id": "620cc4ed-814e-4fd7-925e-b353d94e194b",
+      "name": "Fabio1",
+      "city": "Test1",
+      "membership": "Pro"
+    },
+    {
+      "id": "fa96618b-71a6-404b-954c-f012b7c638aa",
+      "name": "Fabio",
+      "city": "Test",
+      "membership": "Pro"
+    },
+    {
+      "id": "dbd12199-c7e4-4fe1-9039-37beb41262ae",
+      "name": "Testing",
+      "city": "Testing",
+      "membership": "Testing"
+    },
+    {
+      "id": "995ef2da-88e6-4b0b-ac95-97d2c1355aa8",
+      "name": "69",
+      "city": "69",
+      "membership": "69"
+    },
+    {
+      "id": "92930d10-7a81-4bcd-bd2d-f736b3c2ccc5",
+      "name": "",
+      "city": "",
+      "membership": ""
+    }
+  ]
+}

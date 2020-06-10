@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mutantSidebarDiv';
+  opened = false;
+
+
+
+
+  openSidebar() {
+  this.opened = ! this.opened;
+  //console.log('value : ' + this.opened);
+  }
+
 }

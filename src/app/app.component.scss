@@ -1,0 +1,30 @@
+.ng-sidebar-container {
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+::ng-deep .ng-sidebar {
+  background-color: rgb(240, 240, 240);
+  width: 180px;
+  padding: 2em 2em;
+  box-shadow: 0 0 2.5em rgb(201, 201, 201);
+}
+
+.sideMenu {
+  display: block;
+  margin-top: 2em;
+}
+
+.sideMenu li  {
+  align-items: left;
+  margin-bottom: 15px;
+}
+
+.sideMenu li a {
+  align-items: left;
+  display: block;
+  width: 100%;
+}
