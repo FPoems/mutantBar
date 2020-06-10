@@ -1,9 +1,5 @@
 <div id="wrapper">
-  <div
-    [class.loading]="loading$ | async"
-    id="shopping-list"
-    *ngIf="!(error$ | async); else error"
-  >
+  <div [class.loading]="(loading$ | async)" id="shopping-list" *ngIf="!(error$ | async); else error">
     <div id="list">
       <h2>Clients</h2>
 
