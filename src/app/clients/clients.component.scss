@@ -1,10 +1,9 @@
 #wrapper {
-  text-align: center;
+  text-align: left;
   color: white;
   display: flex;
   height: 100vh;
   flex-direction: column;
-  justify-content: center;
   margin: 0px;
   width: 800px;
   margin: 0 auto;
@@ -41,12 +40,13 @@ form > button {
 ul {
   list-style: none;
   background: #1dd1a1;
-  padding: 10px 0px;
+  padding-left: 5px;
   margin: 0px;
 }
 
 li {
   padding-bottom: 4px;
+  padding-left: 5px;
 }
 
 h2 {
@@ -54,6 +54,11 @@ h2 {
   padding: 10px 0px;
   margin: 0px;
 }
+
+.clientsTitle {
+  text-align: center;
+}
+
 
 
 .loading {

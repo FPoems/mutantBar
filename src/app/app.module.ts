@@ -43,7 +43,7 @@ import { ClientsEffects } from './store/effects/clients.effects';
     MaterialLibModule,
     SidebarModule,
     FormsModule,
-    StoreModule.forRoot({ shopping: ClientReducer }),
+    StoreModule.forRoot({ clients : ClientReducer }),
     //I added this in order to monitor the changes in the REDUX TAB in Firefox Console
     StoreDevtoolsModule.instrument({ maxAge: 25 }),
     HttpClientModule,

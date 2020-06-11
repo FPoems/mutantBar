@@ -1,15 +1,15 @@
+<!--<h1> {{myTempVar}} </h1>-->
+
 <div id="wrapper">
   <div [class.loading]="(loading$ | async)" id="shopping-list" *ngIf="!(error$ | async); else error">
     <div id="list">
-      <h2>Clients</h2>
-
+      <h2 class="clientsTitle">Clients</h2>
         <ul *ngIf="(clientItems | async); else noItems">
-        <li *ngFor="let client of clientItems | async" (click)="deleteItem(client.id)">
+          <li *ngFor="let client of clientItems | async" (click)="deleteItem(client.id)">
           Name : {{ client.name }} | City : {{ client.city }} | Membership :
           {{ client.membership }} | id : {{ client.id }}
         </li>
       </ul>
-
       <ng-template #noItems>
         <ul>
           <li style="max-width: 250px; margin: 0 auto;">No items found.</li>

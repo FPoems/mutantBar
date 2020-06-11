@@ -19,6 +19,7 @@ export class ClientsComponent implements OnInit {
   clientItems: Observable<Array<ClientItem>>;
   loading$: Observable<Boolean>;
   error$: Observable<Error>;
+  myTempVar : Array<ClientItem> = [];
   newClientItem: ClientItem = {
     id: '',
     name: '',
@@ -29,11 +30,16 @@ export class ClientsComponent implements OnInit {
   constructor(private store: Store<AppState>) {}
 
   ngOnInit(): void {
-    this.clientItems = this.store.select((store) => store.client.list);
-    this.loading$ = this.store.select((store) => store.client.loading);
-    this.error$ = this.store.select((store) => store.client.error);
+
+    this.clientItems = this.store.select((store) => store.clients.list);
+    this.loading$ = this.store.select((store) => store.clients.loading);
+    this.error$ = this.store.select((store) => store.clients.error);
     console.log('--> ', this.clientItems);
+
     this.store.dispatch(new LoadItemAction());
+    this.clientItems.subscribe(data => {
+      this.myTempVar = data
+    });
   }
 
   addItem() {
