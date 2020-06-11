@@ -8,7 +8,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatToolbarModule } from '@angular/material/toolbar';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
 
 const MaterialModuleComponents = [
   MatSliderModule,
@@ -17,7 +19,10 @@ const MaterialModuleComponents = [
   MatIconModule,
   MatBadgeModule,
   MatProgressSpinnerModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatDialogModule,
+  MatDividerModule,
+  MatListModule
 ];
 
 @NgModule({

@@ -1,13 +1,27 @@
 <!--<h1> {{myTempVar}} </h1>-->
 
 <div id="wrapper">
-  <div [class.loading]="(loading$ | async)" id="shopping-list" *ngIf="!(error$ | async); else error">
+  <div
+    [class.loading]="loading$ | async"
+    id="shopping-list"
+    *ngIf="!(error$ | async); else error"
+  >
     <div id="list">
       <h2 class="clientsTitle">Clients</h2>
-        <ul *ngIf="(clientItems | async); else noItems">
-          <li *ngFor="let client of clientItems | async" (click)="deleteItem(client.id)">
-          Name : {{ client.name }} | City : {{ client.city }} | Membership :
-          {{ client.membership }} | id : {{ client.id }}
+      <ul *ngIf="clientItems | async; else noItems">
+        <li *ngFor="let client of clientItems | async">
+          <mat-list>
+            <button
+              mat-mini-fab
+              class="deletebutton"
+              (click)="deleteItemConfirmclickMethod(client.name, client.id)"
+            >
+              <mat-icon class="deleteIcon">delete</mat-icon>
+            </button>
+            Name : {{ client.name }} | City : {{ client.city }} | Membership :
+            {{ client.membership }}
+            <mat-divider></mat-divider>
+          </mat-list>
         </li>
       </ul>
       <ng-template #noItems>

@@ -54,13 +54,22 @@ h2 {
   padding: 10px 0px;
   margin: 0px;
 }
-
 .clientsTitle {
   text-align: center;
 }
 
-
-
 .loading {
-  box-shadow: 20px 20px 0px pink !important;
+  box-shadow: 20px 20px 0px red !important;
+}
+
+.deletebutton {
+  color: rgb(255, 255, 255);
+  background-color: #222f3e;
+  width: 30px;
+  height: 30px;
+}
+
+.deleteIcon{
+  height: 25px;
+  width: 25px;
 }

@@ -26,6 +26,7 @@ import { FormsModule } from '@angular/forms';
 import { ClientReducer } from './store/reducers/client.reducer';
 import { ClientsComponent } from './clients/clients.component';
 import { ClientsEffects } from './store/effects/clients.effects';
+import { CustomDialogComponent } from './custom-dialog/custom-dialog.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ClientsEffects } from './store/effects/clients.effects';
     PortfoliohealingComponent,
     SafePipe,
     ClientsComponent,
+    CustomDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,6 +52,7 @@ import { ClientsEffects } from './store/effects/clients.effects';
     EffectsModule.forRoot([ClientsEffects])
   ],
   providers: [],
+  entryComponents: [CustomDialogComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
